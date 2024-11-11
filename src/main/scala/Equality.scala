@@ -23,7 +23,8 @@ object Equality {
     implicit val jsValueDefaultEquality: org.scalactic.Equality[JsValue]   = jsonEquality(jsNumberDefaultEquality)
   }
 
-  /** Defines equality for [[play.api.libs.json.JsValue]]. Requires implicit [[org.scalactic.Equality[JsNumber]]] to provide numerical tolerance.
+  /** Defines equality for [[play.api.libs.json.JsValue]]. Requires implicit [[org.scalactic.Equality[JsNumber]]] to
+    * provide numerical tolerance.
     *
     * @param jsNumberEquality
     * @return
@@ -96,8 +97,9 @@ object Equality {
     }
   }
 
-  /** Defines equality for [[play.api.libs.json.JsNumber]] with tolerance. When with tolerance, it will compare two JsNumber with the given
-    * tolerance. For example, when tolerance is `t` and given value is `x`, it will compare `x - t <= y <= x + t`.
+  /** Defines equality for [[play.api.libs.json.JsNumber]] with tolerance. When with tolerance, it will compare two
+    * JsNumber with the given tolerance. For example, when tolerance is `t` and given value is `x`, it will compare `x -
+    * t <= y <= x + t`.
     *
     * @param tolerance
     * @return

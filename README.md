@@ -1,5 +1,7 @@
 ## ScalaTest Equality definition for Play JSON
 
+[![Latest version](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/dev.capslock.scalatest-play-json-equality/latest.svg)](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/dev.capslock.scalatest-play-json-equality)
+
 You can compare `JsValue` with `JsNumber` tolerance in ScalaTest.
 
 ```scala
@@ -34,3 +36,9 @@ json1 shouldEqual json2
 ```
 
 See test to more example.
+
+## Release
+
+```sh
+dotenvx run -- sbt -v 'clean; +publishSigned; sonatypeBundleRelease'
+```

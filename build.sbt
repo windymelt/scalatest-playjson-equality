@@ -18,8 +18,8 @@ lazy val root = project
     organizationName     := "Windymelt",
     organizationHomepage := Some(url("https://www.3qe.us/")),
     versionScheme        := Some("early-semver"),
-    name                 := "ScalaTest Play JSON Equality",
-    version              := "0.0.1", // fails when SNAPSHOT?
+    name                 := "scalatest-play-json-equality",
+    version              := "0.0.2", // fails when SNAPSHOT?
     crossScalaVersions   := supportedScalaVersions,
     libraryDependencies ++= Seq(
       "com.typesafe.play" %% "play-json" % "2.10.0",
