@@ -1,6 +1,6 @@
 ## ScalaTest Equality definition for Play JSON
 
-You can compare `JsValue` in favor of `JsNumber` tolerance in ScalaTest.
+You can compare `JsValue` with `JsNumber` tolerance in ScalaTest.
 
 ```scala
 import dev.capslock.scalatestplayjson.Equality.default._
