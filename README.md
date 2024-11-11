@@ -1,6 +1,6 @@
 ## ScalaTest Equality definition for Play JSON
 
-[![Latest version](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/dev.capslock.scalatest-play-json-equality/latest.svg)](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/dev.capslock.scalatest-play-json-equality)
+[![Latest version](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/scalatest-play-json-equality/latest.svg)](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/scalatest-play-json-equality)
 
 You can compare `JsValue` with `JsNumber` tolerance in ScalaTest.
 
