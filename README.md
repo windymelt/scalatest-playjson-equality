@@ -1,6 +1,17 @@
 ## ScalaTest Equality definition for Play JSON
 
-[![Latest version](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/scalatest-play-json-equality/latest-by-scala-version.svg)](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/scalatest-play-json-equality)
+[![CI](https://github.com/windymelt/scalatest-playjson-equality/actions/workflows/ci.yaml/badge.svg?branch=main)](https://github.com/windymelt/scalatest-playjson-equality/actions/workflows/ci.yaml) [![Latest version](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/scalatest-play-json-equality/latest-by-scala-version.svg)](https://index.scala-lang.org/windymelt/scalatest-playjson-equality/scalatest-play-json-equality) [![scaladoc](https://javadoc.io/badge2/dev.capslock/scalatest-play-json-equality_3/scaladoc.svg)](https://javadoc.io/doc/dev.capslock/scalatest-play-json-equality_3)
+
+
+### Install
+
+On sbt:
+
+```scala
+libraryDependencies += "dev.capslock" %% "scalatest-play-json-equality" % scalaTestEqualityPlayJsonVersion
+```
+
+### Usage
 
 You can compare `JsValue` with `JsNumber` tolerance in ScalaTest.
 
