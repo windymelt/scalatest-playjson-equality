@@ -1,8 +1,8 @@
 import xerial.sbt.Sonatype.sonatypeCentralHost
 
-lazy val scala212               = "2.12.18"
-lazy val scala213               = "2.13.14"
-lazy val scala3                 = "3.3.1"
+lazy val scala212               = "2.12.20"
+lazy val scala213               = "2.13.15"
+lazy val scala3                 = "3.3.4"
 lazy val supportedScalaVersions = List(scala212, scala213, scala3)
 
 Global / useGpgPinentry := true // for yubikey
@@ -19,7 +19,7 @@ lazy val root = project
     organizationHomepage := Some(url("https://www.3qe.us/")),
     versionScheme        := Some("early-semver"),
     name                 := "scalatest-play-json-equality",
-    version              := "0.0.2", // fails when SNAPSHOT?
+    version              := "0.0.3", // fails when SNAPSHOT?
     crossScalaVersions   := supportedScalaVersions,
     libraryDependencies ++= Seq(
       "com.typesafe.play" %% "play-json" % "2.10.0",
@@ -29,7 +29,7 @@ lazy val root = project
     scmInfo := Some(
       ScmInfo(
         url("https://github.com/windymelt/scalatest-playjson-equality"),
-        "scm:git@github.com:windymelt/scalatest-playjson-equality.git",
+        "scm:git:git@github.com:windymelt/scalatest-playjson-equality.git",
       ),
     ),
     developers := List(
