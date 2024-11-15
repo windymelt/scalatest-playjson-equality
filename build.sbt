@@ -1,3 +1,4 @@
+import xerial.sbt.Sonatype.GitHubHosting
 import xerial.sbt.Sonatype.sonatypeCentralHost
 
 lazy val scala212               = "2.12.20"
@@ -19,19 +20,14 @@ lazy val root = project
     organizationHomepage := Some(url("https://www.3qe.us/")),
     versionScheme        := Some("early-semver"),
     name                 := "scalatest-play-json-equality",
-    version              := "0.0.3", // fails when SNAPSHOT?
+    version              := "0.0.4", // fails when SNAPSHOT?
     crossScalaVersions   := supportedScalaVersions,
     libraryDependencies ++= Seq(
       "com.typesafe.play" %% "play-json" % "2.10.0",
     ),
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.10" % Test,
     libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.10",
-    scmInfo := Some(
-      ScmInfo(
-        url("https://github.com/windymelt/scalatest-playjson-equality"),
-        "scm:git:git@github.com:windymelt/scalatest-playjson-equality.git",
-      ),
-    ),
+    sonatypeProjectHosting := Some(GitHubHosting("windymelt", "scalatest-playjson-equality", "windymelt@capslock.dev")),
     developers := List(
       Developer(
         id = "Windymelt",
